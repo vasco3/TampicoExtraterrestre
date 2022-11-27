@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import libroPng from '../public/libro-ovnis-tampico.png';
+import aliensPng from '../public/aliens-de-tampico.png';
+import ovnisPng from '../public/ovnis-desviando-huracan.png';
 
 export default function Home() {
   return (
@@ -63,6 +65,22 @@ export default function Home() {
               </a>
             </li>
           </ol>
+          <div>
+            <h3>Arte</h3>
+            <p>
+              <figure>
+                <Image src={aliensPng} alt="Aliens en Tampico" />
+                <figcaption>Aliens en la playa Miramar</figcaption>
+              </figure>
+              <figure>
+                <Image
+                  src={ovnisPng}
+                  alt="Ovnis desviando huracan en Tampico"
+                />
+                <figcaption>Ovnis desviando un huracán</figcaption>
+              </figure>
+            </p>
+          </div>
         </div>
       </main>
     </div>
