@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import libroPng from '../public/libro-ovnis-tampico.png';
+import escafandraPng from '../public/escafandra.jpg';
 import aliensPng from '../public/aliens-de-tampico.png';
 import ovnisPng from '../public/ovnis-desviando-huracan.png';
 
@@ -62,6 +63,16 @@ export default function Home() {
                 />
                 {` Libro: "La historia de la base extraterrestre de la playa
                 Miramar del sur de Tamaulipas" por Francisco Ramos`}
+              </a>
+            </li>
+            <li>
+              <a href="https://www.amazon.com.mx/escafandra-y-otros-relatos-ebook/dp/B09X8HVWCW">
+                <Image
+                  src={escafandraPng}
+                  width="256"
+                  alt={`Libro: "La Escafandra y otros relatos" por Kristian Eichelman`}
+                />
+                {` Libro: "La escafandra y otros relatos" por Kristian Eichelman`}
               </a>
             </li>
           </ol>
